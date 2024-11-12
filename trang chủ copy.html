@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lớp 12A2 - Homepage</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        body {
+            min-height: 100vh;
+            background-color: #f4f4f9;
+        }
+        
+        /* Header Styles */
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(27, 40, 58, 0.8);
+            z-index: 100;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .menu a {
+            color: #fff;
+            font-size: 1.1em;
+            text-decoration: none;
+            font-weight: 600;
+            position: relative;
+            padding: 6px 15px;
+            transition: color 0.3s ease;
+        }
+        .menu a::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #fff;
+            border-radius: 30px;
+            transform: scale(0);
+            opacity: 0;
+            background: #fff;
+            transition: all 0.3s ease;
+            z-index: -1;
+        }
+        .menu a:hover::before {
+            transform: scale(1);
+            opacity: 1;
+        }
+        .title {
+            font-size: 1.8em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #f4f4f9;
+        }
+        
+        /* Main Section Styles */
+        .lớp-12a2 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('images/hinh nen trang chu.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        
+        /* Text Animation Styles */
+        #chữ {
+            position: absolute;
+            font-size: 8em;
+            font-weight: bold;
+            color: black; /* Initial color */
+            text-shadow: 2px 4px 5px rgba(244, 244, 249, 0.8);
+            opacity: 0;
+            transform: scale(0.5);
+            animation: fadeInScale 1.5s ease forwards, gradientText 3s ease forwards 1.5s;
+            cursor: pointer; /* Makes it look clickable */
+            text-decoration: none; /* Removes underline for link */
+        }
+
+        /* Keyframes for Text Animation */
+        @keyframes fadeInScale {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes gradientText {
+            0% {
+                color: black;
+            }
+            100% {
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title">Lớp 12A2</div>
+        <nav class="menu">
+            <a href="trang-chu.html">Home</a>
+            <a href="https://thanhnien.vn/">Tin Tức</a>
+            <a href="https://www.facebook.com/c3ungvankhiemcm/?locale=vi_VN">Trường</a>
+            <a href="gioi-thieu-lop.html">Giới Thiệu</a>
+        </nav>
+    </header>
+    
+    <section class="lớp-12a2">
+        <a href="12a2 index.html" id="chữ">Lớp 12A2</a> <!-- Link to another page -->
+    </section>
+</body>
+</html>

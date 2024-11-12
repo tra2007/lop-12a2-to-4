@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Lớp 12A2</title>
+	<link rel="stylesheet" href="assets/css/main.css">
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+	<style>
+		/* Sticky header */
+		header.sticky-header {
+			position: sticky;
+			top: 0;
+			background: rgba(27, 40, 58, 0.8);
+			padding: 15px 50px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			z-index: 100;
+		}
+		.title {
+			font-size: 1.8em;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #f4f4f9;
+		}
+		.menu {
+			display: flex;
+			gap: 20px;
+		}
+		.menu a {
+			color: #fff;
+			font-size: 1.1em;
+			text-decoration: none;
+			font-weight: 600;
+			padding: 6px 15px;
+			transition: color 0.3s ease;
+			position: relative;
+		}
+		.menu a::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: 2px solid #fff;
+			border-radius: 30px;
+			transform: scale(0);
+			opacity: 0;
+			background: #fff;
+			transition: all 0.3s ease;
+			z-index: -1;
+		}
+		.menu a:hover::before {
+			transform: scale(1);
+			opacity: 1;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
+
+		<!-- Sticky Header -->
+		<header class="sticky-header">
+			<div class="title">Lớp 12A2</div>
+			<nav class="menu">
+				<a href="trang-chu.html">Home</a>
+				<a href="https://thanhnien.vn/">Tin Tức</a>
+				<a href="https://www.facebook.com/c3ungvankhiemcm/?locale=vi_VN">Trường</a>
+				<a href="gioi-thieu-lop.html">Giới Thiệu</a>
+			</nav>
+		</header>
+
+		<!-- Intro -->
+		<div id="intro">
+			<h1>Chào mừng đến với <br>Lớp 12A2</h1>
+			<p>Tập thể đoàn kết, năng động và sáng tạo, luôn nỗ lực phấn đấu vì thành công chung.</p>
+			<ul class="actions">
+				<li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+			</ul>
+		</div>
+
+		<!-- Main Content -->
+		<div id="main">
+			<!-- Featured Post -->
+			<article class="post featured">
+				<header class="major">
+					<span class="date">Ngày</span>
+					<h2>Giới thiệu về lớp 12A2</h2>
+					<p>Lớp 12A2 tại Trường THPT Ung Văn Khiêm là một tập thể đoàn kết, năng động và sáng tạo. Với tinh thần học tập chăm chỉ và sự nỗ lực không ngừng, các thành viên của lớp 12A2 luôn phấn đấu để đạt thành tích cao trong học tập và các hoạt động ngoại khóa.</p>
+				</header>
+				<a href="#" class="image main"><img src="images/hình ảnh 1.jpg" alt="Hình ảnh lớp 12A2"></a>
+				<ul class="actions special">
+					<li><a href="giới thiệu lớp index.html" class="button large">Xem thêm</a></li>
+				</ul>
+			</article>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<section>
+				<form method="post" action="#">
+					<div class="fields">
+						<div class="field">
+							<label for="name">Tên</label>
+							<input type="text" name="name" id="name" />
+						</div>
+						<div class="field">
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" />
+						</div>
+						<div class="field">
+							<label for="message">Ghi chú</label>
+							<textarea name="message" id="message" rows="3"></textarea>
+						</div>
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="Gửi ghi chú" /></li>
+					</ul>
+				</form>
+			</section>
+			<section class="split contact">
+				<section>
+					<h3>Số điện thoại</h3>
+					<p><a href="tel:0000000000">(000) 000-0000</a></p>
+				</section>
+				<section>
+					<h3>Email</h3>
+					<p><a href="mailto:info@untitled.tld">info@untitled.tld</a></p>
+				</section>
+				<section>
+					<h3>Mạng xã hội</h3>
+					<ul class="icons alt">
+						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+				</section>
+			</section>
+		</footer>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>

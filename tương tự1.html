@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Sơ Đồ Lớp 12A2</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* CSS cho sơ đồ lớp */
+        .classroom {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 10px;
+            margin: 20px;
+        }
+        .seat {
+            width: 80px;
+            height: 80px;
+            background-color: #4CAF50;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .seat:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="12a2 index.html" class="logo">Lớp 12A2</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="12a2 index.html">Giới thiệu</a></li>
+                <li class="active"><a href="tương tự1.html">Sơ đồ lớp</a></li>
+                <li><a href="tương tự2.html">Tương tự 2</a></li>
+				<li><a href="tương tự 3.html">Tương tự 3</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Post -->
+            <section class="post">
+                <header class="major">
+                    <span class="date">Ngày</span>
+                    <h1>Sơ Đồ Lớp</h1>
+                    <p>Chúng tôi là một tập thể 42 học sinh đầy nhiệt huyết và sáng tạo, đang theo học tại trường Ung Văn Khiêm.</p>
+                </header>
+
+                <!-- Sơ Đồ Lớp -->
+                <div class="classroom">
+                    <!-- Mỗi chỗ ngồi sẽ có onclick để hiện thông tin -->
+                    <div class="seat" onclick="showInfo(' Thanh Trúc')">Trúc</div>
+                    <div class="seat" onclick="showInfo(' Thanh Trà')">Trà</div>
+                    <div class="seat" onclick="showInfo('Minh Thư')">Thư</div>
+                    <div class="seat" onclick="showInfo('Ngọc Trâm')">Trâm</div>
+                    <div class="seat" onclick="showInfo('Thanh Triếm')">Triếm</div>
+                    <div class="seat" onclick="showInfo('Phương Nhung')">Nhung</div>
+                    <div class="seat" onclick="showInfo('Mỹ Trang')">Trang</div>
+                    <div class="seat" onclick="showInfo('Ko có')"></div>
+                    <div class="seat" onclick="showInfo('Kiều Vi')">Vi</div>
+                    <div class="seat" onclick="showInfo('Mỹ Ngà')">Ngà</div>
+                    <div class="seat" onclick="showInfo('Mỹ Linh')">Linh</div>
+                    <div class="seat" onclick="showInfo('Thùy Trang')">Trang</div>
+                    <div class="seat" onclick="showInfo('Đặng Ngân')">Ngân</div>
+                    <div class="seat" onclick="showInfo('Trần Ngân')">Ngân</div>
+                    <div class="seat" onclick="showInfo('Huỳnh Đông')">Đông</div>
+                    <div class="seat" onclick="showInfo('ko có')"></div>
+                    <div class="seat" onclick="showInfo('Lan Anh')">Anh</div>
+                    <div class="seat" onclick="showInfo('Hồng Châu')">Châu</div>
+                    <div class="seat" onclick="showInfo('Hà My')">My</div>
+                    <div class="seat" onclick="showInfo('Công Nghĩa')">Nghĩa</div>
+                    <div class="seat" onclick="showInfo('Phi Thái')">Thái</div>
+                    <div class="seat" onclick="showInfo('Phong')">Phong</div>
+                    <div class="seat" onclick="showInfo('Gia Hân')">Hân</div>
+                    <div class="seat" onclick="showInfo('Huỳnh Mai')">Mai</div>
+                    <div class="seat" onclick="showInfo('Ngọc Yến')">Yến</div>
+                    <div class="seat" onclick="showInfo('Văn Kiên')">Kiên</div>
+                    <div class="seat" onclick="showInfo('Thiên Kim')">Kim</div>
+                    <div class="seat" onclick="showInfo('Tuấn Khang')">Khang</div>
+                    <div class="seat" onclick="showInfo('Dung')">Dung</div>
+                    <div class="seat" onclick="showInfo('Phước Thịnh')">Thịnh </div>
+                    <div class="seat" onclick="showInfo('Thế Hào')">Hào</div>
+                    <div class="seat" onclick="showInfo('Anh Thy')">Thy</div>
+                    <div class="seat" onclick="showInfo('Ko có')"></div>
+                    <div class="seat" onclick="showInfo('Ngọc Trân')">Trân</div>
+                    <div class="seat" onclick="showInfo('Thanh An')">An</div>
+                    <div class="seat" onclick="showInfo('Sang')">Sang</div>
+                    <div class="seat" onclick="showInfo('Trần Trúc')">Trúc</div>
+                    <div class="seat" onclick="showInfo('Quỳnh Anh')">Anh</div>
+                    <div class="seat" onclick="showInfo('Bảo Trân')">Trân</div>
+                    <div class="seat" onclick="showInfo('Ko có')"></div>
+                    <div class="seat" onclick="showInfo('Hữu Thọ')">Thọ</div>
+                    <div class="seat" onclick="showInfo('Hải Long')">Long</div>
+                    <div class="seat" onclick="showInfo('Ngọc Quý')">Quý </div>
+                    <div class="seat" onclick="showInfo('Ko có')"></div>
+                    <div class="seat" onclick="showInfo('Thế Duy')">Duy</div>
+                    <div class="seat" onclick="showInfo('Thái')">Thái</div>
+                    <div class="seat" onclick="showInfo('Ko có')"></div>
+                    <div class="seat" onclick="showInfo('Ko có')"></div>
+                   
+                   
+                </div>
+
+                <script>
+                    function showInfo(name) {
+                        alert('Thông tin học sinh: ' + name);
+                    }
+                </script>
+
+            </section>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <section>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field">
+                                <label for="name">Tên</label>
+                                <input type="text" name="name" id="name" />
+                            </div>
+                            <div class="field">
+                                <label for="email">Email</label>
+                                <input type="text" name="email" id="email" />
+                            </div>
+                            <div class="field">
+                                <label for="message">Ghi chú</label>
+                                <textarea name="message" id="message" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input type="submit" value="Gửi ghi chú" /></li>
+                        </ul>
+                    </form>
+                </section>
+                <section class="split contact">
+                    <section>
+                        <h3>Số điện thoại</h3>
+                        <p><a href="#">(000) 000-0000</a></p>
+                    </section>
+                    <section>
+                        <h3>Email</h3>
+                        <p><a href="#">info@untitled.tld</a></p>
+                    </section>
+                    <section>
+                        <h3>Mạng xã hội</h3>
+                        <ul class="icons alt">
+                            <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                            <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                        </ul>
+                    </section>
+                </section>
+            </footer>
+
